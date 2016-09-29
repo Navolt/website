@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>Navolt</title>
-	<meta name="description" content="Depth of knowledge in abstract thought">
+	<meta name="description" content="Nothing interesting happens.">
 	<meta name="keywords" content="Navolt, psychology, logic, reason, science, brain, thought">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	
@@ -75,6 +75,13 @@
 			max-height:250px;
 			max-width:600px;
 			height:auto;
+			width:100%;
+			display:block;
+			margin:0px auto;
+		}
+		
+		.small_logo {
+			max-width:141px;
 			width:100%;
 			display:block;
 			margin:0px auto;
@@ -193,6 +200,24 @@
 			}
 		}
 		
+		@media all and (min-width:600px) {
+			.small_logo {
+				display:none;
+			}
+			.logo {
+				display:block;
+			}
+		}
+		
+		@media all and (max-width:600px) {
+			.logo {
+				display:none;
+			}
+			.small_logo {
+				display:block;
+			}
+		}
+		
 		
 		
 	</style>
@@ -212,7 +237,8 @@
 		<!-- HEADING -->
 		<div class="max" style="background-color:#FFF;">
 			<div class="contain heading" style="padding:0px;">
-				<img src="plain_golden_logo_web_large.jpg" class="logo" alt="Navolt">
+				<img src="navolt_design.jpg" class="logo" alt="Navolt">
+				<img src="n_only.jpg" class="small_logo" alt="Navolt">
 				
 			</div><!-- end contain -->
 		</div><!-- end max -->
@@ -227,7 +253,7 @@
 	<!-- ABOUT -->
 	<div class="max about" style="background-color:#f2f2f2">
 		<div class="contain">
-			<p class="about_txt" style="text-align:center;">
+			<p class="about_txt" >
 			</p>	
 		</div><!-- end contain -->
 	</div><!-- end max -->
