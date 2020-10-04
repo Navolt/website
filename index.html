@@ -1,0 +1,249 @@
+<head>
+  <title>Navolt</title>
+	<title>Navolt</title>
+	<meta name="description" content="An entity.">
+	<meta name="keywords" content="Navolt, phaneron, sentinel, combine, syndicate, elint">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+	.fa {
+	//  padding: 20px;
+	//  font-size: 30px;
+	  text-align: center;
+	  text-decoration: none;
+	//  margin: 5px 2px;
+	//  border-radius: 50%;
+	}
+	
+	.fa:hover {
+    opacity: 0.7;
+	}
+	
+	.fa-facebook {
+	  background: #3B5998;
+	  color: white;
+	}
+
+	.fa-twitter {
+	//  background: #55ACEE;
+	//  color: white;
+		color: grey;
+	}
+	
+	.fa-youtube {
+	//  background: #bb0000;
+	//  color: white;
+		color: grey;
+	}
+	</style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		
+		
+		$(document).ready(function(){
+		
+			$('.script-disabled').hide();
+			$('.loading').show();	
+			$('.loading').fadeOut(400);		
+	
+
+	  setTimeout(
+		function() {
+
+			
+			$('.logo-box').fadeIn(800);	
+			$('.logo2').fadeIn(800);
+				
+			
+			$('.logo2').animate({top:"20px", opacity:"0"},1000);
+		//	$('.logo2').fadeOut(500);
+
+
+			
+
+		}, 400);
+		
+	  setTimeout(
+		function() {
+		
+			var element = document.getElementById("myBtn");
+			element.classList.remove("w3-display-middle");
+		//	$('.logo2').hide();
+			$('.logo').fadeIn(600);
+			$('.site').fadeIn(1200);
+			$('.success').fadeIn(1200);
+		}, 2000);
+		
+/*		
+	  setTimeout(
+		function() {
+			$('.site').fadeIn("slow");
+			$('.success').fadeIn("slow");		
+		}, 1200);
+				
+	  setTimeout(	  
+		function() {
+		
+		
+		//	$('.logo-box').show();
+		//	$('.success').show();
+		//	$('.site').show();
+			
+		//	$('.site').fadeIn();
+		//	$('.logo-box').fadeIn(1000);
+		///	$('.success').fadeIn(3000);
+			
+			
+		}, 700);
+
+	  setTimeout(
+		function() {
+	//	document.getElementById("success").display = "block";
+			var element = document.getElementById("myBtn");
+			element.classList.remove("justify-content-center");
+			
+	//	$('.success').css({display:"block"});
+		$('.site').show();
+		}, 1500);
+		
+	  setTimeout(
+		function() {
+			
+		$('.success').show();
+
+		}, 3000);
+		*/
+		
+		
+		  $('#myBtn').popover({title: "Hello", content: "Don't be afraid, you are welcome here.", animation: false, html:true, trigger:"hover"}); 
+		  
+		 /* $('#myBtn').click(function(){
+		 //   document.getElementById("thetoast").innerHTML = '<div class="toast mt-3"><div class="toast-header">Hey!</div><div class="toast-body">don\'t do that...  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Game</button></div></div>';
+			//$('.thetoast').innerHTML('test');
+			$('.toast').toast({animation: false, delay: 3000});
+			$('.toast').toast('show');
+			
+		  });
+		 */
+		});
+		
+		
+    </script>
+</head>
+<body>
+
+<div class="d-flex justify-content-center w3-display-middle">
+<div class="script-disabled" style="position:absolute; width:250px">This websites requires JavaScript.</div>
+  <div class="spinner-border loading" role="status" style="display:none">
+    <span class="sr-only">Loading...</span>
+	
+  </div>
+</div>
+
+<div class="logo-box w3-animate-opacity" style="display:none">
+	<div class="alert alert-success success" id="success" style="border-radius:0px; display:none;"><strong>Success!</strong> You have been granted access to this cyberportal. </div>
+	<img src="https://navolt.github.io/website/include/image/navolt_design.jpg" class="logo2 justify-content-center w3-display-middle" id="myBtn1" style="display:none; max-width:600px; width:95%;height:auto" alt="Navolt">
+	<center><img src="https://navolt.github.io/website/include/image/n_only.jpg" class="logo justify-content-center w3-display-middle" id="myBtn" style="display:none; max-width:120px;width:30%;min-width:75px;height:auto;" alt="Navolt"></center>
+</div>
+
+ <div class="site" style="display:none">
+
+
+	  <noscript>This website requires JavaScript.</noscript>
+
+	<div class="container mt-3 w3-animate-opacity">
+	 
+     <!-- logo -->
+
+	  
+	<div id="thetoast"></div>
+	  
+	  <br>
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs">
+		<li class="nav-item">
+		  <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" data-toggle="tab" href="#menu1">Projects</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" data-toggle="tab" href="#menu2">Connect</a>
+		</li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+		<div id="home" class="container tab-pane active"><br>
+		  <p>An entity.</p><bf />
+		  <!-- <button type="button" class="btn btn-info">Let's Play</button> -->
+		</div>
+		<div id="menu1" class="container tab-pane"><br>
+		  <p>There are no projects currently available.</p>
+		</div>
+		<div id="menu2" class="container tab-pane"><br>
+		
+			<div style="display:flex; flex-direction:row; text-align:center; margin-top:20px;justify-content:center">
+				<div style="width:200px"><i class="material-icons" style="vertical-align:center;font-size:15px;color:grey">facebook</i>  <br /><a href="http://www.facebook.com/navolt" style="color:grey" target="_blank">Facebook</a><br /><br /></div>
+				<div style="width:200px"><i class="fab fa-youtube"></i> <br /><a href="http://youtube.com/navolt" style="color:grey" target="_blank">YouTube</a></div>
+				<div style="width:200px"><i class="fab fa-twitter" style="color:grey"></i> <br /><a href="http://twitter.com/navolt" style="color:grey" target="_blank">Twitter</a> <br /><br /></div>
+
+			</div>
+
+		  
+		</div>
+	  </div>
+	  
+	  
+	  
+		<!-- The Modal -->
+	  <div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+		  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title">Modal Heading</h4>
+			  <button type="button" class="close" data-dismiss="modal">×</button>
+			</div>
+			
+			<!-- Modal body -->
+			<div class="modal-body">
+			  Modal body..
+			</div>
+			
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+			
+		  </div>
+		</div>
+	  </div>
+	  
+	  
+	</div>
+
+	<div class="container mt-3">
+	  
+	  <!-- Button to Open the Modal 
+	  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+		Open modal-->
+	  </button>
+
+
+	  
+	</div>
+</div>
+
+
+</body>
+</html>
