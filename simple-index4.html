@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+	<title>Navolt</title>
+	<meta name="description" content="From information manipulation to the foundation 
+					of the cyber structure, this is a inside look
+					behind the security wall and into the deep web of
+					mysteries.">
+	<meta name="keywords" content="Navolt, navol, nav, volt, navo, phaneron, sentinel, combine, syndicate, elint">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	
+	<style>
+	
+	* {
+		box-sizing: border-box;
+	//	font-family:"courier new","lucida console", monospace;
+	//	font-family:"lucida console";
+		font-family:arial;
+		font-size:16px;
+		user-select:none;
+		margin:0px;
+	}
+	
+	h1,h2,h3{
+		margin:0px;
+	}
+	
+	body{
+		margin:0px;
+	//	background-color:ghostwhite;
+		box-sizing: border-box;
+	}
+	
+	.first-divider {
+		background-color:#fff;
+		width:100%;
+	//	height:154.61px;
+		padding-top:20px;
+		padding-bottom:20px;
+	//	border-bottom:1px solid steelblue;
+	}
+	
+	.logo {
+		display:block;
+		width:100px;
+		height:155px;
+	//	margin-left:auto;
+	//	margin-right:auto;
+		margin-left:15%;
+	//	margin-top:5%;
+
+	}
+	
+	.second-divider {
+
+	//	max-width:900px;
+		min-width:350px;
+		margin-left:auto;
+		margin-right:auto;
+	//	background-color:whitesmoke;
+	//	padding:30px;
+		position:relative;
+	}
+
+	
+	** NAV BAR **
+	** The Navolt navigation bar. **
+	
+	.tab-content {
+		display:none;
+	}
+	
+	.pc-tab {
+			margin-top:-45px;
+			padding-left:15%;
+		}
+
+	.pc-tab > input,
+	.pc-tab section > div {
+		display:none;
+	}
+
+
+
+	.infotainer {
+		padding-top:50px;
+		padding-left:20px;
+		padding-right:20px;
+		padding-bottom:20px;
+		padding-right:30%;
+	//	background-color:#fff;
+	//	background-color:floralwhite;
+		color:darkslategray;
+		border-top:1px solid steelblue;
+//		border-left:1px solid steelblue;
+//		font-family:roboto,arial,"Times New Roman";
+		font-size:16px;
+		display:block;
+		position:relative;
+		margin-top:8px;		
+		margin-bottom:0px;
+	//	margin-left:-1px;
+	//	margin-bottom:-1px;	
+	//	margin-right:-1px;
+		background-color:snow;	
+	//	background-color:#f4f4f4
+		min-height:250px;
+	}
+	
+
+	
+	
+	.pc-tab > section > div{
+		padding:0px;
+		margin:0px;
+		position:relative;
+
+	}
+
+	
+	#tab1:checked ~ section .tab1,
+	#tab2:checked ~ section .tab2,
+	#tab3:checked ~ section .tab3 {
+		display:block;
+	}
+	
+
+
+	.pc-tab label {
+		float:left;
+		padding:15px 25px;
+	//	color:#444;
+	//	color:darkslategray;
+	//	color:indianred;
+	//	color:indigo;
+		color:steelblue;
+		user-select:none;
+	//	transition-duration:250ms;
+		cursor: pointer;
+		overflow:hidden;
+		border:1px solid transparent;
+		position:relative;
+	//	display:inline-block;
+		margin-bottom:-1px;
+	//	font-family:"courier new","lucida console", monospace;
+		font-family:arial;
+
+	}
+	
+	
+	
+	.pc-tab > input:checked + label {
+	//	background-color:#fff;
+		background-color:ghostwhite;
+	//	margin-top:-1px;
+	//	padding-top:16px;
+		border-top:1px solid steelblue;
+		border-left:1px solid steelblue;
+		border-right:1px solid steelblue;
+	//	color:darksalmon;
+	//	color:indianred;
+	//	color:darkslategray;
+		user-select:none;
+	}
+	
+
+	
+	.pc-tab > input:checked + label:hover {
+		text-decoration: none;
+
+	}
+	
+	.pc-tab > input:checked + label:hover::before,
+	.pc-tab > input:checked + label:hover::after {
+		background:none;
+		border:none;
+
+	}
+	
+	.pc-tab label:hover {
+	//	text-decoration: underline;
+	//	text-decoration-color: dimgray;
+
+		
+	}
+	
+	.pc-tab label:hover::before {
+		content:"";
+	//	border-left:1px solid #000;
+		top:78%;
+		left:10%;
+		right:10%;
+		bottom:20%;
+	//	background-color:steelblue;
+		position:absolute;
+		opacity:30%;
+		
+	}
+
+	.pc-tab label:hover::after {
+		content:"";
+	//	border-left:1px solid #000;
+		border-top:2px solid indianred;
+		border-right:2px solid indianred;
+		bottom:40%;
+		height:5px;
+		right:10px;
+		width:5px;
+	//	background-color:green;
+		position:absolute;
+		border-radius:10%;
+		opacity:75%;
+		transform: rotate(135deg);
+	}
+	
+	section {
+		clear:both;
+		border:1px solid steelblue;
+		background-color:ghostwhite;
+	}
+	
+
+
+	
+	.pc-tab section div {
+	//	padding:15px 25px;
+
+
+	//	border:1px solid silver;
+	//	background-color:oldlace;
+
+	}
+	
+	#tab1, .tab1 {
+		margin-left:120px;
+	}
+	
+	@media only screen and (max-width: 900px) {
+		section {
+		//	border-left:none;
+		//	border-right:none;
+		}
+		
+		.logo{
+		//	margin-left:5%;
+		}
+		
+		.pc-tab > section > div > p {
+			padding-right:20px;
+		}
+		
+		
+	}
+	
+	@media only screen and (max-width: 600px) {
+		.pc-tab label {
+		//	padding:10px 20px;
+		}
+		
+		.logo {
+			margin-left:default;
+			margin:0px auto;
+		//	margin-right:5%;
+		}
+		.pc-tab{
+			padding-left:0px;
+			margin-top:5px;
+		}
+		
+
+		
+		#tab1, .tab1 {
+			margin-left:0px;
+		}
+		
+
+	
+		 
+		
+	}
+	
+	@media only screen and (max-width: 400px) {
+		.pc-tab label {
+			padding:10px 20px;
+		}	
+	}
+	
+	
+			
+	</style>
+	
+</head>
+<body>
+
+
+	
+	<div class="second-divider">
+		<img class="logo" src="https://navolt.com/include/image/navolt_logo_compressed.webp" alt="Navolt Logo">
+
+		<div class="pc-tab">
+			<input id="tab1" type="radio" name="pct" checked>
+			<label for="tab1" class="tab1">Home</label>
+			<input id="tab2" type="radio" name="pct">
+			<label for="tab2" class="tab2">Data Origin</label>
+			<input id="tab3" type="radio" name="pct">
+			<label for="tab3" class="tab3">Cryptography</label>
+			
+
+			<section>
+				<div class="tab1">
+				
+					<div class="infotainer">
+				
+						<p>
+						<h3>A-thru-Zed</h3><br/>
+						<p>
+						From information manipulation to the foundation 
+						of the cyber structure, this is a inside look
+						behind the security wall and into the deep web of
+						mysteries. <br/><br/>
+						What does it all mean when meaning is lost? Let's 
+						explore the philosophy of existance.
+						</p>
+						
+						
+						<br><br>
+						
+						<h3>Psychology</h3><br/>
+						<p>
+						The power of conciousness: are there limits? There
+						are humans all over the world who have pushed the
+						limits of what is known as possible. You have 
+						pushed your own limits of mental capacity and still
+						continue to develop.
+						</p>
+					</div>
+				</div>
+				<div class="tab2">
+					
+					<div class="infotainer">
+					
+						<h3>Source Tracing</h3><br/>
+						<p>
+						The use of the internet to spread information
+						across the world in real time has brought about
+						challenges in the ability to originate where
+						data has come from. Source Tracing has the 
+						capacity to originate information in order to
+						efficiently trace the source and identify its
+						validity.
+						</p>
+						<br/><br/>
+						
+						<h3>Derive Origin</h3><br/>
+						<p>
+						Disinformation spreads around
+						networks on the web and among social media, and 
+						the challenge is to track in real time where
+						similar language used in a post has travelled
+						to determine the source. Sourcing can be a complex
+						feat to maneuver if the data is not copied word-for-word
+						or specifically sited. An associated image may be less
+						challenging.
+						</p>
+						
+					</div>
+				</div>
+				<div class="tab3">
+
+					<div class="infotainer">
+					
+						<h3>Security</h3><br/>				
+						<p>
+						Encryption solutions and mathematical encryption 
+						equations may be full-proof, but only so long 
+						as the code supporting them is not found to have
+						a bug, but inevitablely there will be breaks in 
+						code that will be exploited.
+						</p>
+						
+					</div>
+					
+				</div>
+			</section>
+			
+			
+		</div>
+		
+		
+		
+	</div>
+</body>
+</html>
