@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, min-width:400px, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>Navolt</title>
 	<meta name="description" content="Ideas that create strong emotions are like viruses.-Navolt research">
@@ -11,7 +11,14 @@
 	<style>
 
 	* {	
-	//	border:1px solid pink;
+	/*	border:1px solid pink; */
+		
+	}
+	
+	body { 
+		overflow:hidden;
+		padding:0px;
+		margin:0px;
 	}
 	
 	.centered {
@@ -21,21 +28,25 @@
 		transform: translate(-50%, -50%);
 		align-content: center;
 		text-align:center;
-
-		width:320px;
 		overflow:visible;
 		width:425px;
-		height:300px;
+	/*	height:300px;
+		height:211px; */
+		height:170px;
 		
 	}
 	
+
+	
 	.logo {
-		margin:0px auto;	
-		width:100px;
-		height:155px;
-		display:block;
-		padding:2px;
-		margin-top:20px;
+		margin:0px auto;
+		display:block;		
+/* HALF	width:139px; */
+/* HALF	height:211px; */
+		width:111px;
+		height:169px;
+
+		
 	}
 	
 	p {
@@ -68,7 +79,8 @@
 	span {
 	//	color:red;
 		display:block;
-	//	clear:both;
+		clear:both;
+		margin-top:-2px;
 	}
 	
 	.socialmedia {
@@ -79,7 +91,7 @@
 		width:261px;
 	}
 	
-	.linktest {
+	.link {
 		display:inline-block;
 		text-align:center;
 		height:60px;
@@ -90,6 +102,14 @@
 		margin:0px;
 	}
 
+	@media screen and (max-height:400px) {
+	
+		.centered{
+		/*	background-color:blue; */
+		}
+	}
+
+	
 	
 	</style>
 	
@@ -97,20 +117,20 @@
 <body>
 	<div class="centered">
 
-			<img class="logo" src="https://navolt.com/include/image/navolt_logo_compressed.webp" alt="Navolt Logo">
+			<img class="logo" src="https://navolt.com/include/image/n_logo_full.png" alt="Navolt Logo">
 			
 			
 			<div class="socialmedia">
 			
-				<a class="linktest" href="https://www.youtube.com/navolt" target="_blank">
+				<a class="link" href="https://www.youtube.com/navolt" target="_blank">
 					<img class="icon" src="https://navolt.com/include/image/youtube-icon.png">
 					<span>YouTube</span>
 				</a>
-				<a class="linktest" href="https://www.twitter.com/navolt" target="_blank">
+				<a class="link" href="https://www.twitter.com/navolt" target="_blank">
 					<img class="icon" src="https://navolt.com/include/image/twitter-icon.png">
 					<span>Twitter</span>
 				</a>
-				<a class="linktest" href="https://www.facebook.com/navolt" target="_blank" >
+				<a class="link" href="https://www.facebook.com/navolt" target="_blank" >
 					<img class="icon" src="https://navolt.com/include/image/facebook-icon.png">
 					<span>Facebook</span>
 				</a>
