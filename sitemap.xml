@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://www.navolt.com/</loc>
-      <changefreq>daily</changefreq>
-      <priority>1</priority>
-   </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-      <loc>https://navolt.com/</loc>
-   </url>
-<url>
-      <loc>https://navolt.com/index.html</loc>
-   </url>
-</urlset> 
+  <loc>https://navolt.com/</loc>
+  <lastmod>2022-02-02T22:58:34+00:00</lastmod>
+</url>
+
+
+</urlset>
